@@ -13,6 +13,9 @@ class HelpApplication extends \samson\cms\App
     /** Application name */
     public $name = 'Помощь';
 
+    /** Application icon*/
+    public $icon = 'fa-question';
+
     /** Identifier */
     protected $id = 'help';
 
