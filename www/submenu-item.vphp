@@ -1,0 +1,5 @@
+<li>
+    <a href="<?php iv('id')?>/#<?php iv('module')?>">
+        <?php iv('modulename')?>
+    </a>
+</li>
