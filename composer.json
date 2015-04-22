@@ -1,16 +1,17 @@
 {
-    "name":"samsonos/cms_app_help",
-    "description":"SamsonCMS generic help application",
-    "author":"Vitaly Iegorov <egorov@samsonos.com>",
-    "require":{
-        "samsonos/cms_app":"*"
-    },
-    "license":"Open Software License (OSL) v 3.0",
-    "homepage":"http://samsonos.com/",
-    "autoload": {
-        "classmap": ["src/"],
-        "psr-0": {
-            "samsonos\\cms\\web\\help": "src/"
-        }
+  "name": "samsoncms/help",
+  "description": "SamsonCMS help application",
+  "author": "Vitaly Iegorov <egorov@samsonos.com>",
+  "require": {
+    "samsoncms/application": "*"
+  },
+  "minimum-stability": "dev",
+  "license": "Open Software License (OSL) v 3.0",
+  "homepage": "http://samsonos.com/",
+  "autoload": {
+    "classmap": ["src/"],
+    "psr-4": {
+      "samsoncms\\app\\help": "src/"
     }
+  }
 }
