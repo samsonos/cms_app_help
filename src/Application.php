@@ -29,7 +29,7 @@ class Application extends \samsoncms\Application
         $subMenu = '<li><a href="#top">'.t('В начало', true).'</a></li>';
 
         // Fire event when application help is rendered
-        \samsonphp\event\Event::fire('help.submenu.rendered', array(&$subMenu));
+        \samsonphp\event\Event::fire('help.submenu.rendered', array(&$subMenu, $this));
     }
 
     /** Universal controller action */
@@ -41,7 +41,7 @@ class Application extends \samsoncms\Application
         $html = '';
 
         // Fire event when application help is rendered
-        \samsonphp\event\Event::fire('help.content.rendered', array(&$html));
+        \samsonphp\event\Event::fire('help.content.rendered', array(&$html, $this));
 
         // Prepare view
         $this->view('index')
